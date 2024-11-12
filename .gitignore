@@ -1,0 +1,53 @@
+# ============ Android App Gitignore ============
+
+# Android Studio build files
+app/.gradle/
+app/.idea/
+app/build/
+app/local.properties
+app/.DS_Store
+
+# macOS system files
+*.DS_Store
+
+# generated files
+app/captures/
+app/.cxx/
+app/outputs/
+app/navigation/
+app/intermediates/
+app/externalNativeBuild/
+app/*.iml
+
+# Android dependencies
+app/.externalNativeBuild/
+app/.bundle/
+app/.expo/
+
+# ============ Python Server Gitignore ============
+
+# Python cache files
+server/__pycache__/
+server/*.pyc
+server/*.pyo
+server/*.pyd
+
+# virtual environments
+server/venv/
+server/.env
+
+# log files
+server/*.log
+
+# ============ Global Gitignore ============
+
+# system files
+*.log
+*.env
+Thumbs.db
+.DS_Store
+
+# IDE/editor config files
+.idea/
+.vscode/
+*.sublime-workspace
