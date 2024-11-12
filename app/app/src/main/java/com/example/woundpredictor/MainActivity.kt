@@ -140,7 +140,7 @@ class MainActivity : ComponentActivity() {
         val client = OkHttpClient.Builder().addInterceptor(logging).build()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://100.86.162.202:5000")  // Replace with your server IP
+            .baseUrl("http://<server-ip-address>:5000")  // Replace with your server IP
             .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .build()

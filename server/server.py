@@ -28,7 +28,7 @@ def segment_image():
     image = Image.open(BytesIO(file.read())).convert("RGB")
 
     # Run YOLOv8 segmentation with custom save directory
-    model.predict(image, save=True, exist_ok=True)
+    model.predict(image, save=True, project="runs/segment", exist_ok=True)
 
     # move image from default path to new path
     if os.path.exists(default_img_path):
