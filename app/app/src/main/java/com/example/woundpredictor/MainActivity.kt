@@ -44,6 +44,7 @@ import androidx.core.content.FileProvider
 class MainActivity : ComponentActivity() {
 
     private lateinit var photoUri: Uri
+    private val SERVER_IP = "http://<your-server-ip>:5000"  // replace with your server-ip address!!
 
     private val cameraPermissionLauncher = registerForActivityResult(RequestPermission()) { granted ->
         if (granted) {
@@ -140,7 +141,7 @@ class MainActivity : ComponentActivity() {
         val client = OkHttpClient.Builder().addInterceptor(logging).build()
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("http://<server-ip-address>:5000")  // Replace with your server IP
+            .baseUrl(SERVER_IP)
             .client(client)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
