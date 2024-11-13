@@ -1,5 +1,5 @@
 
-# Wound Detection App
+# Wound Segmentation App
 
 This project consists of:
 - A Python Flask server running a YOLOv8 segmentation model for wound detection (`server` folder).
